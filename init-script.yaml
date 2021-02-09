@@ -213,7 +213,7 @@ def adminsMembers = []
     adminsMembers.addAll(getTeamMembers("devops"))
   } catch (e) { println("detected error" + e) }
   try {
-    adminsMembers.addAll(getTeamMembers("jenkins-admin"))
+    adminsMembers.addAll(getTeamMembers("common-jenkins-admin"))
   } catch (e) { println("detected error" + e) }
 def globalRoleRead = "read"
 def globalBuildRole = "build"
